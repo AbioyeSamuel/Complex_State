@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 
 function App() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  function firstNameInput(event) {
-    setFirstName(event.target.value);
-  }
-  function lastNameInput(event) {
-    setLastName(event.target.value);
-  }
+  const [fullName, setFullName] = useState({
+    firstName: "",
+    lastName: ""
+  });
 
   return (
     <div className="container">
