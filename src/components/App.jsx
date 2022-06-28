@@ -5,7 +5,10 @@ function App() {
     firstName: "",
     lastName: ""
   });
-
+  function handleChanged(event) {
+    const newValue = event.target.value;
+    setFullName(newValue);
+  }
   return (
     <div className="container">
       <h1>
@@ -13,16 +16,16 @@ function App() {
       </h1>
       <form>
         <input
-          onChange={firstNameInput}
+          onChange={handleChanged}
           name="fName"
           placeholder="First Name"
-          value={firstName}
+          value={fullName.firstName}
         />
         <input
-          onChange={lastNameInput}
+          onChange={handleChanged}
           name="lName"
           placeholder="Last Name"
-          value={lastName}
+          value={fullName.lastName}
         />
         <button>Submit</button>
       </form>
