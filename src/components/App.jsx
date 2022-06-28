@@ -2,9 +2,12 @@ import React, { useState } from "react";
 
 function App() {
   const [firstName, setFirstName] = useState("");
-  const [lastName] = useState("");
+  const [lastName, setLastName] = useState("");
   function firstNameInput(event) {
     setFirstName(event.target.value);
+  }
+  function lastNameInput(event) {
+    setLastName(event.target.value);
   }
 
   return (
