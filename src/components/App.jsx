@@ -6,6 +6,7 @@ function App() {
     lastName: ""
   });
   function handleChanged(event) {
+    //use events in this form because the event listeners access asynthetic event
     const [value, name] = event.target;
     setFullName((prevValue) => {
       if (name === "fName") {
