@@ -8,8 +8,6 @@ function App() {
   function handleChanged(event) {
     const newValue = event.target.value;
     const inputName = event.target.name;
-    console.log(newValue);
-    console.log(inputName);
   }
   return (
     <div className="container">
