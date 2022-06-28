@@ -20,8 +20,14 @@ function App() {
           onChange={firstNameInput}
           name="fName"
           placeholder="First Name"
+          value={firstName}
         />
-        <input onChange={lastNameInput} name="lName" placeholder="Last Name" />
+        <input
+          onChange={lastNameInput}
+          name="lName"
+          placeholder="Last Name"
+          value={lastName}
+        />
         <button>Submit</button>
       </form>
     </div>
