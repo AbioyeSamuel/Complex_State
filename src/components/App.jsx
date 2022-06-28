@@ -6,14 +6,12 @@ function App() {
     lastName: ""
   });
   function handleChanged(event) {
-    const newValue = event.target.value;
-    const inputName = event.target.name;
-
+    const [value, name] = event.target;
     setFullName((prevValue) => {
-      if (inputName === "fName") {
-        return { fName: newValue, lName: prevValue.lastName };
-      } else if (inputName === "lName") {
-        return { fName: prevValue.firstName, lName: newValue };
+      if (name === "fName") {
+        return { fName: value, lName: prevValue.lastName };
+      } else if (name === "lName") {
+        return { fName: prevValue.firstName, lName: value };
       }
     });
   }
