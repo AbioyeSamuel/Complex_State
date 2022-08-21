@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function App() {
+//   Set state of firstName and lastName in a faster method using an object in the useState() i.e useState({});
   const [fullName, setFullName] = useState({
     firstName: "",
     lastName: ""
